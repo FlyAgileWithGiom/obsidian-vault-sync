@@ -1,0 +1,6 @@
+.vault-sync-ribbon[data-state="ok"] .svg-icon { color: var(--color-green); }
+.vault-sync-ribbon[data-state="error"] .svg-icon { color: var(--color-red); }
+.vault-sync-ribbon[data-state="syncing"] .svg-icon { animation: vault-sync-spin 1s linear infinite; }
+.vault-sync-ribbon[data-state="offline"] .svg-icon { opacity: 0.4; }
+
+@keyframes vault-sync-spin { to { transform: rotate(360deg); } }
